@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/96b76dc251.js" crossorigin="anonymous"></script>
 </head>
@@ -12,57 +14,63 @@
     <header>
         <div>
             <!-- logo -->
-            <img src="image/Reservia@3x.png" alt="Logo"/>
+            <img src="css/image/Reservia.svg" alt="Logo"/>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
-                <li>S'inscrire</li>
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li class="menu-li"><a href="#hebergements" class="menu-link">Hébergements</a></li>
+                <li class="menu-li"><a href="#activites" class="menu-link">Activités</a></li>
+                <li class="menu-li"><a href="#" class="register">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
 
-    <body>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+    <section class="heading">
+        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="subtitle">En plein centre ville ou en pleine nature</p>
+    </section>
+   
        
         <!-- Barre de recherche -->
-        <div>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
+        <section class="search-box">
+            <div class="icone-search"> 
+                <i class="fas fa-map-marker-alt"></i> 
             </div>
-            <p>Marseille, France</p>
-            <p>Rechercher</p>
-        </div>
-        <!-- Filtres -->
-        <div>
-            <p><strong>Filtres</strong></p>
             <div>
-                <div>
+                <input type="search" value="Marseille, France" class="input-search"/>
+            </div>
+            <div>
+                <button class="btn-search">Rechercher</button>
+            </div>
+        </section>
+        <!-- Filtres -->
+        <section class="filter">
+            <p class="center">Filtres</p>
+            <div class="filter-box">
+                <div class="icone">
                     <i class="fas fa-solid fa-money-bill-wave"></i>
                 </div>
-                <p><strong>Economique</strong></p>
+                <p>Economique<p>
             </div>
-            <div>
-                <div>
+            <div class="filter-box">
+                <div class="icone">
                     <i class="fas fa-child"></i>
                 </div>
-                <p><strong>Familial</strong></p>
+                <p>Familial</p>
             </div>
-            <div>
-                <div>
+            <div class="filter-box">
+                <div class="icone">
                     <i class="fas fa-heart"></i>
                 </div>
-                <p><strong>Romantique</strong></p>
+                <p>Romantique</p>
             </div>
-            <div>
-                <div>
+            <div class="filter-box">
+                <div class="icone">
                     <i class="fas fa-dog"></i>
                 </div>
-                <p><strong>Animaux autorisé</strong></p>
+                <p>Animaux autorisé</p>
             </div>
-        </div>
+        </section>
         <!-- Petit i -->
         <div>
             <div>
@@ -207,26 +215,30 @@
                 <figcaption><strong>Parc Longchamp</strong></figcaption>
             </div>
         </section>
-        
-    </body>
 
     <footer>
-        <h3>A propos</h3>
-            <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
-            </ul>
-        <h3>Nos hébergements</h3>
-            <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        <h3>Assistance</h3>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
+        <div class="footer">
+            <h3>A propos</h3>
+                <ul class="footer-menu">
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+        </div>
+        <div class="footer">
+            <h3>Nos hébergements</h3>
+                <ul class="footer-menu">
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+        </div>
+        <div class="footer">
+            <h3>Assistance</h3>
+                <ul class="footer-menu">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+        </div>
     </footer>
 </body>
 </html>
