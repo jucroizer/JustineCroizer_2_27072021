@@ -56,6 +56,13 @@ header {
     color:black;
 }
 
+.menu-link:hover{
+    text-decoration: overline;
+    color: #0065FC;
+    text-decoration-thickness: 4px;
+    border-top: 2em;
+}
+
 .register{
     text-decoration: none;
     color: #0065FC;
@@ -220,12 +227,16 @@ h1 {
 
 /* Hébergements */
 
-.hebergements {
+#hebergements {
     margin: 3em 1.5em 3em 3em;
     padding: 1em;
     background-color:#F2F2F2;
     width: 60%;
     border-radius: 15px;
+}
+
+.title-hbg{
+    margin: 2em 0em 0em 1em;
 }
 
 .block-hbg {
@@ -245,13 +256,14 @@ h1 {
 }
 
 /* Légendes */
-figcaption {
+.caption {
     margin: 0.4em 0.5em 0.4em 0.5em;
 }
 
 .second-caption {
     font-family: 'Raleway Light';
     font-size: 0.9em;
+    margin: 0.4em 0.5em 0.4em 0.5em;
 }
 
 /* Icones Etoiles */
@@ -277,7 +289,7 @@ figcaption {
     object-fit: cover;
 }
 
-figure {
+.block-img-hbg {
     margin: 0;
     height: 15rem;
 }
@@ -293,9 +305,22 @@ figure {
     clear: right; */
 }
 
+.header-pop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-pop{
+    margin: 2em 0em 1em 1em;
+}
+
+.fa-chart-line {
+    margin: 3.5em 2em 0em 0em;
+}
+
 .block-pop{
     width: 90%;
-    height: 23%;
+    height: 10rem;
     border-style : solid;
     border-radius: 15px;
     margin: 1em;
@@ -308,7 +333,7 @@ figure {
 .block-img-pop{
     width: 40%;
     overflow: hidden;
-    object-fit:cover
+    object-fit:cover;
 }
 
 .block-txt-pop {
@@ -317,19 +342,40 @@ figure {
     margin-left: 1em;
 }
 
-.block-txt-pop p {
-    margin: 0;
+.title-txt-pop-2{
+    padding-left: 1em;
+    white-space: normal;
+}
+
+.title-txt-pop{
+    padding-left: 1em;
+}
+
+.subtitle-txt-pop{
+    font-family: 'Raleway Light';
+    padding-left: 1em;
+}
+
+.block-icn-pop{
+    margin: 0.5em;
+    padding-top: 2em;
+}
+
+.block-icn-pop-2{
+    margin: 0.5em;
+    padding-top: 2em;
 }
 
 .img-2 {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
 }
 
 /* Activités */
 
-.activites {
+#activites {
     margin-left: 3em;
     margin-right: 3em;
     padding: 1em;
@@ -407,3 +453,158 @@ figure {
     padding-left: 1em;
 }
 
+
+/* Config Smartphone */
+
+@media screen and (max-width: 600px){
+
+    /* Header et Nav Bar */
+    header {
+        display: block;
+        padding: 1em 0em 1em 0em;
+    }
+
+    .register{
+        position: relative;
+        bottom: 3em;
+        right: 7em;
+    }
+
+    /* Footer */
+    footer{
+        display: block;
+        width: 100%;
+    }
+
+    /* Heading */
+    .heading {
+        text-align: justify;
+        white-space: pre-line;
+        margin: 1em;
+    }
+
+    h1 {
+        margin: 0em;
+    }
+
+    .subtitle {
+        margin: 0em;
+    }
+
+    /* Search Bar */
+
+    /* Filter */
+    .filter {
+        display: block;
+        margin: 1em;
+    }
+
+    .filter-box{
+        width: 57%;
+    }
+
+    .filter-box p{
+        position: relative;
+        right: 70px;
+    }
+
+    .icone {
+        position: relative;
+        right: 70px;
+        z-index: 1;
+    }
+
+    .icone .fas{
+        color: #0065FC;
+    }
+
+    /* Hébergement et Les Plus Populaires */
+
+    .hbg-pop {
+        display: block;
+        width: 100%;
+    }
+
+    /* Hébergements */
+
+    #hebergements {
+        margin:0em;
+        padding: 1em;
+        background-color:#FFFFFF;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .title-hbg{
+        margin: 0em 0em 1em 0em;
+    }
+
+    .block-hbg {
+        width: 100%;
+        display: block;
+    }
+
+
+    /* Les Plus Populaires */
+    .populaires {
+        margin: 0em;
+        padding: 1em;
+        background-color: #F2F2F2;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .title-pop{
+        margin: 2em 0em 0em 1em;
+    }
+
+    .block-pop{
+        width: 100%;
+        height: 8rem;
+        margin: 0.5em;
+    }
+
+    .block-icn-pop{
+        padding-top: 0em;
+    }
+    
+    .block-icn-pop-2{
+        padding-top: 0em;
+    }
+
+    /* Activités */
+
+    #activites {
+        margin: 0em;
+        padding: 1em;
+        width: 100%;
+    }
+
+    .atv-grid {
+        display: block;
+    }
+
+    .img-3 {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .img-pomegues{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .img-vieux-port{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .img-calanques{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+    }
+
+}
