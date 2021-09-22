@@ -60,7 +60,7 @@ header {
 }
 
 .menu-link:hover{
-    text-decoration: overline;
+    border-top: solid;
     color: #0065FC;
     text-decoration-thickness: 4px;
     border-top: 2em;
@@ -470,18 +470,43 @@ h1 {
     header {
         display: block;
         padding: 1em 0em 1em 0em;
+        margin: 0;
+    }
+
+    .logo{
+        margin-left: 1em;
+    }
+
+    .menu .menu-li{
+        padding-left: 0;
+    }
+
+    .menu-link{
+        border-bottom: solid;
+        border-color: #F2F2F2;
+        padding: 2em;
+        margin: 0;
+    }
+
+    .menu-link:hover{
+        text-decoration: none;
+        border-bottom: solid;
+        
+        color: #0065FC;
+        padding: 2em;
+        margin: 0;
     }
 
     .register{
         position: relative;
         bottom: 3em;
-        right: 7em;
+        right: 3em;
     }
 
     /* Footer */
     footer{
         display: block;
-        width: 80%;
+        width: 100%;
     }
 
     /* Heading */
@@ -501,7 +526,31 @@ h1 {
 
     /* Search Bar */
 
+    .btn-search {
+        visibility: hidden;
+    }
+
+    .btn-search::after {
+        display: block;
+        position: absolute;
+        top: 22.5em;
+        font-family: FontAwesome;
+        content: "\f002";
+        visibility: visible;
+        height: 39px;
+        width: 4em;
+        border-radius: 10px 10px 10px 10px;
+        border: none;
+        background-color: #0065FC;
+        color: #fff;
+        
+    }
+
     /* Filter */
+    .filter .center{
+        top: 0em;
+    }
+
     .filter {
         display: block;
         margin: 1em;
@@ -526,6 +575,13 @@ h1 {
         color: #0065FC;
     }
 
+    /* Petit i */
+
+    .information{
+        margin: 0em;
+        padding: 0em 1em 1em 1em;
+    }
+
     /* Hébergement et Les Plus Populaires */
 
     .hbg-pop {
@@ -539,8 +595,10 @@ h1 {
         margin:0em;
         padding: 1em;
         background-color:#FFFFFF;
-        width: 85%;
+        width: 100%;
         border-radius: 0px;
+        position: relative;
+        top: 37em;
     }
 
     .title-hbg{
@@ -550,6 +608,11 @@ h1 {
     .block-hbg {
         width: 100%;
         display: block;
+        margin-bottom: 1em;
+    }
+
+    .show-more{
+        margin: 2em 0em 1em 0.5em;
     }
 
 
@@ -558,8 +621,13 @@ h1 {
         margin: 0em;
         padding: 1em;
         background-color: #F2F2F2;
-        width: 85%;
+        width: 110%;
         border-radius: 0px;
+        position: relative;
+        top: -107em;
+    }
+    .header-pop {
+        margin: -1em 0em 1.5em 0em;
     }
 
     .title-pop{
@@ -567,7 +635,7 @@ h1 {
     }
 
     .block-pop{
-        width: 85%;
+        width: 90%;
         height: 8rem;
         margin: 0.5em;
     }
@@ -585,7 +653,7 @@ h1 {
     #activites {
         margin: 0em;
         padding: 1em;
-        width: 85%;
+        width: 90%;
     }
 
     .atv-grid {
@@ -615,4 +683,52 @@ h1 {
         object-fit: cover;
     }
 
+}
+
+/* Config Tablette */
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+
+    header {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer{
+        width: 120%;
+    }
+
+    .hbg-pop {
+        display: flex;
+        width: 120%;
+    }
+
+    #hebergements {
+        margin: 2em 1.5em 3em 3em;
+        padding: 1em;
+        background-color:#F2F2F2;
+        width: 70%;
+        border-radius: 15px;
+    }
+
+    .block-hbg {
+        width: 43%;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    .populaires {
+        margin: 2em 3em 3em 0em;
+        padding: 1em;
+        background-color: #F2F2F2;
+        width: 30%;
+        height: 70%;
+        border-radius: 15px;
+        /* float: right;
+        clear: right; */
+    }
+
+    #activites {
+        width: 110%;
+    }
 }
