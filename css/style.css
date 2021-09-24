@@ -66,8 +66,7 @@ header {
 .menu-link:hover{
     border-top: solid;
     color: #0065FC;
-    text-decoration-thickness: 4px;
-    border-top: 2em;
+    padding: 2.8em 1em 0em 1em;
 }
 
 .register-ul{
