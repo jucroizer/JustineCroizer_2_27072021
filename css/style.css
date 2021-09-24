@@ -43,14 +43,18 @@ header {
     margin-right: 1em;
 }
 
-.menu{
+.nav-bar{
+    margin-left: 42em;
+}
+
+.menu {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
 .menu .menu-li{
-    padding-left: 90px;
+    padding-left: 5em;
 }
 
 .menu-link {
@@ -64,6 +68,10 @@ header {
     color: #0065FC;
     text-decoration-thickness: 4px;
     border-top: 2em;
+}
+
+.register-ul{
+    list-style-type: none;
 }
 
 .register{
@@ -459,7 +467,7 @@ h1 {
 
 /* Config Smartphone */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
 
     html, body {
         margin: 0em;
@@ -477,21 +485,25 @@ h1 {
         margin-left: 1em;
     }
 
-    .menu .menu-li{
-        padding-left: 0;
+    .nav-bar {
+        margin-left: 0em;
     }
 
-    .menu-link{
+    .menu {
+        padding: 0;
+    }
+
+    .menu .menu-li{
+        width: 50%;
         border-bottom: solid;
         border-color: #F2F2F2;
-        padding: 2em;
-        margin: 0;
+        padding: 2em 2em 2em 2em;
+        
     }
 
     .menu-link:hover{
         text-decoration: none;
         border-bottom: solid;
-        
         color: #0065FC;
         padding: 2em;
         margin: 0;
@@ -499,14 +511,20 @@ h1 {
 
     .register{
         position: relative;
-        bottom: 3em;
-        right: 3em;
+        top: -9.5em;
+        left: 15em;
     }
 
     /* Footer */
     footer{
         display: block;
         width: 100%;
+    }
+
+    .footer {
+        padding-left: 1em;
+        padding-right: 1em;
+
     }
 
     /* Heading */
@@ -531,19 +549,17 @@ h1 {
     }
 
     .btn-search::after {
-        display: block;
-        position: absolute;
-        top: 22.5em;
         font-family: FontAwesome;
         content: "\f002";
         visibility: visible;
-        height: 39px;
+        height: 30px;
         width: 4em;
         border-radius: 10px 10px 10px 10px;
         border: none;
         background-color: #0065FC;
         color: #fff;
-        
+        padding: 1em;
+        margin-left: -6em;
     }
 
     /* Filter */
@@ -626,6 +642,7 @@ h1 {
         position: relative;
         top: -107em;
     }
+
     .header-pop {
         margin: -1em 0em 1.5em 0em;
     }
@@ -685,30 +702,91 @@ h1 {
 
 }
 
-/* Config Tablette */
+/* Config Tablette Portrait*/
 
-@media screen and (min-width: 601px) and (max-width: 1024px){
+@media screen and (min-width: 721px) and (max-width: 1024px)
+{
+
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
     header {
-        width: 100%;
+        width: 85%;
+    }
+
+    .nav-bar{
+        margin-left:-9em;
+    }
+
+    .menu .menu-li{
+        padding-left: 4em;
+    }
+
+    .register{
+        position: absolute;
+        left: 40em;
     }
 
     /* Footer */
     footer{
-        width: 120%;
+        width: 92%;
+        margin-bottom: 3em;
+    }
+
+    .footer {
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    .heading{
+        width: 85%;
+    }
+
+    .filter .center{
+        top: 0em;
+    }
+
+    .filter {
+        display: block;
+        margin: 1em;
+    }
+
+    .filter-box{
+        width: 30%;
+        justify-content: initial;
+        margin-left: 0.5em;
+    }
+
+    .filter-box p{
+        position: relative;
+    }
+
+    .icone {
+        position: relative;
+        z-index: 1;
+    }
+
+    .icone .fas{
+        color: #0065FC;
     }
 
     .hbg-pop {
-        display: flex;
-        width: 120%;
+        display: block;
+        width: 100%;
     }
 
     #hebergements {
-        margin: 2em 1.5em 3em 3em;
+        margin: 1em 1em 1em 2em;
         padding: 1em;
         background-color:#F2F2F2;
-        width: 70%;
+        width: 87%;
         border-radius: 15px;
+        position: relative;
+        top: 18em;
     }
 
     .block-hbg {
@@ -718,17 +796,117 @@ h1 {
     }
 
     .populaires {
-        margin: 2em 3em 3em 0em;
+        margin: 0em 0em 1em 2em;
         padding: 1em;
-        background-color: #F2F2F2;
-        width: 30%;
-        height: 70%;
+        background-color: #FFFFFF;
+        width: 87%;
         border-radius: 15px;
-        /* float: right;
-        clear: right; */
+        position: relative;
+        top: -67em;
     }
 
+    .block-img-pop{
+        width: 50%;
+    }
+
+    .block-txt-pop{
+        margin-left: 0em;
+    }
+
+    .block-pop{
+        width: 25%;
+        height: 7rem;
+        margin: 1em 1em 1em 1.5em;
+    }
+
+    .title-txt-pop{
+        font-size: 0.81em;
+    }
+
+    .title-txt-pop-2{
+        font-size: 0.81em;
+    }
+
+    .subtitle-txt-pop{
+        font-size: 0.7em;
+    }
+
+    .block-icn-pop{
+        font-size: 0.8em;
+        padding-top: 0em;
+    }
+    
+    .block-icn-pop-2{
+        font-size: 0.8em;
+        padding-top: 0em;
+    }
+    
     #activites {
-        width: 110%;
+        width: 80%;
+    }
+
+    .img-3 {
+        width: 100%;
+        height: 7rem;
+    }
+
+    .img-pomegues{
+        width: 100%;
+        height: 7rem;
+        object-fit: cover;
+    }
+
+    .img-vieux-port{
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .img-calanques{
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+    
+    .grid {
+        border-radius: 30px;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        box-shadow: 0.2em 0.2em 30px #b1b1b1ec;
+        margin-bottom: 1em;
+    }
+    
+    .vieux-port{
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    
+    .pomegues{
+        grid-column: 2;
+        grid-row: 1/1;
+    }
+    
+    .frioul{
+        grid-column: 2;
+        grid-row: 2/2;
+    }
+    
+    .calanques {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+    
+    .notre-dame {
+        grid-column: 4;
+        grid-row: 1/1;
+    }
+    
+    .longchamp{
+        grid-column: 4;
+        grid-row: 2/2;
+    }
+    
+    .p-atv{
+        padding-left: 1em;
     }
 }
