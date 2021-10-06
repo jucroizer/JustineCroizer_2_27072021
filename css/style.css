@@ -130,7 +130,6 @@ h1 {
     padding: 1em;
     border-radius: 15px;
     display: flex;
-    justify-content: space-around;
 }
 
 .icone-search{
@@ -233,7 +232,7 @@ h1 {
 }
 
 .p-info {
-    font-size: 0.8;
+    font-size: 0.8em;
 }
 
 /* Hébergement et Les Plus Populaires */
@@ -416,7 +415,7 @@ h1 {
     border-radius: 30px;
     background-color: #FFFFFF;
     overflow: hidden;
-    box-shadow: 0.2em 0.2em 30px #F2F2F2;
+    box-shadow: 2em 2em 50px #F2F2F2;
     margin-bottom: 1em;
 }
 
