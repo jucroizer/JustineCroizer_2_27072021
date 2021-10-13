@@ -614,7 +614,7 @@ h1 {
     }
 
     .input-box{
-        width: 16em;
+        width: 15.5em;
     }
 
     .input-search{
@@ -866,7 +866,7 @@ h1 {
 
     .filter {
         display: block;
-        margin: 1em;
+        margin: 1em 2em 1em 2em;
     }
 
     .filter-box{
@@ -900,7 +900,7 @@ h1 {
         width: 87%;
         border-radius: 15px;
         position: relative;
-        top: 17em;
+        top: 21em;
         height: auto;
     }
 
@@ -921,7 +921,7 @@ h1 {
         width: 87%;
         border-radius: 15px;
         position: relative;
-        top: -59em;
+        top: -56em;
     }
 
     .block-img-pop{
@@ -962,7 +962,7 @@ h1 {
     
     #activites {
         width: 80%;
-        margin-top: 1em;
+        margin-top: 5em;
     }
 
     .img-3 {
