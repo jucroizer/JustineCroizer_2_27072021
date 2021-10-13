@@ -606,7 +606,8 @@ h1 {
     /* Search Bar */
 
     .search-box{
-        margin-left: 0.5em;
+        margin-left: 1.6em;
+        padding: 0em;
     }
 
     .icone-search{
