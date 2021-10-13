@@ -626,6 +626,8 @@ h1 {
 
     .btn-search {
         visibility: hidden;
+        padding: 0px;
+        margin-top: 0.13em;
     }
 
     .btn-search::after {
