@@ -239,6 +239,7 @@ h1 {
 
 .hbg-pop {
     display: flex;
+    margin-top: -2em;
 }
 
 /* Hébergements */
@@ -400,8 +401,7 @@ h1 {
 /* Activités */
 
 #activites {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: -2em 3em 0em 3em;
     padding: 1em;
 }
 
