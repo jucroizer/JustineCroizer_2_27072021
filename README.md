@@ -2,6 +2,8 @@
 
 Development of a website to find accommodation and activities
 
+![Reservia website mockup](./images/reservia.png)
+
 ## Technologies used for this project
 
 HTML
